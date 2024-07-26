@@ -11,12 +11,12 @@ with open("README.md", encoding="utf-8") as readme_file:
 
 requirements = [
     "f90nml>=1.1.0",
-    "numpy==1.26.4",
+    "numpy==1.21.2",
     "xarray",
 ]
 
 test_requirements = ["pytest", "pytest-subtests", "serialbox", "coverage"]
-ndsl_requirements = ["ndsl @ git+https://github.com/NOAA-GFDL/NDSL.git@develop"]
+ndsl_requirements = ["ndsl @ git+https://github.com/fmalatino/NDSL.git@benchmark_freeze"]
 develop_requirements = test_requirements + ndsl_requirements + ["pre-commit"]
 
 extras_requires = {
@@ -28,7 +28,7 @@ extras_requires = {
 setup(
     author="The Allen Institute for Artificial Intelligence",
     author_email="oliver.elbert@noaa.gov",
-    python_requires=">=3.11",
+    python_requires=">=3.8",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
