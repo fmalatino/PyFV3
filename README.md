@@ -24,7 +24,6 @@ $ make tests savepoint_tests savepoint_tests_mpi
 If you want to develop code, you should also install the linting requirements and git hooks locally
 
 ```shell
-$ pip install -c constraints.txt -r requirements/requirements_lint.txt
 $ pre-commit install
 
 ## Getting started, in more detail
